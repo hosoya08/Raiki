@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=Voltaire");
+
+@mixin createAlphaRandom {
+  @for $i from 0 through 10 {
+    #{$i * 10%} {
+      opacity: random() * 0.3 + 0.7;
+    }
+  }
+}
+
+html,
+body {
+  background: #333;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+#textFill {
+  animation: alphaRandom 1s linear infinite;
+}
+
+#textGlow {
+  animation: alphaRandom2 1s linear infinite;
+}
+
+@keyframes alphaRandom {
+  @include createAlphaRandom;
+}
+
+@keyframes alphaRandom2 {
+  @include createAlphaRandom;
+}
+
+
+.page-thunder-to-text {
+	position: relative;
+	overflow: hidden;
+
+	canvas {
+		display: block;
+	}
+
+	input {
+		position: absolute;
+		bottom: 50px;
+		left: 0;
+		right: 0;
+		display: block;
+		outline: none;
+		background-color: rgba(38, 50, 56, 0.2);
+		color: #ffffff;
+		border: none;
+		width: 50%;
+		min-width: 500px;
+		max-width: 100%;
+		margin: auto;
+		height: 60px;
+		line-height: 60px;
+		font-size: 40px;
+		padding: 0 20px;
+
+		&:hover, &:focus {
+			border: 1px solid rgba(38, 50, 56, 0.6);
+		}
+
+		&::-webkit-input-placeholder {
+			color: rgba(#ffffff, 0.1);
+		}
+	}
+}

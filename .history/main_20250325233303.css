@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css?family=Voltaire");
+html,
+body {
+  background: #333;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+#textFill {
+  animation: alphaRandom 1s linear infinite;
+}
+
+#textGlow {
+  animation: alphaRandom2 1s linear infinite;
+}
+
+@keyframes alphaRandom {
+  0% {
+    opacity: 0.8219337334;
+  }
+  10% {
+    opacity: 0.9826474012;
+  }
+  20% {
+    opacity: 0.8784141065;
+  }
+  30% {
+    opacity: 0.7149556183;
+  }
+  40% {
+    opacity: 0.9556301227;
+  }
+  50% {
+    opacity: 0.7870307307;
+  }
+  60% {
+    opacity: 0.8868483326;
+  }
+  70% {
+    opacity: 0.9359252135;
+  }
+  80% {
+    opacity: 0.7186274177;
+  }
+  90% {
+    opacity: 0.9327301979;
+  }
+  100% {
+    opacity: 0.837924936;
+  }
+}
+@keyframes alphaRandom2 {
+  0% {
+    opacity: 0.7549817306;
+  }
+  10% {
+    opacity: 0.7824141662;
+  }
+  20% {
+    opacity: 0.7585337883;
+  }
+  30% {
+    opacity: 0.7542422182;
+  }
+  40% {
+    opacity: 0.7956797351;
+  }
+  50% {
+    opacity: 0.8821569643;
+  }
+  60% {
+    opacity: 0.9860754458;
+  }
+  70% {
+    opacity: 0.9238546186;
+  }
+  80% {
+    opacity: 0.99889331;
+  }
+  90% {
+    opacity: 0.9833467613;
+  }
+  100% {
+    opacity: 0.9734773483;
+  }
+}
+.page-thunder-to-text {
+  position: relative;
+  overflow: hidden;
+}
+.page-thunder-to-text canvas {
+  display: block;
+}
+.page-thunder-to-text input {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  display: block;
+  outline: none;
+  background-color: rgba(38, 50, 56, 0.2);
+  color: #ffffff;
+  border: none;
+  width: 50%;
+  min-width: 500px;
+  max-width: 100%;
+  margin: auto;
+  height: 60px;
+  line-height: 60px;
+  font-size: 40px;
+  padding: 0 20px;
+}
+.page-thunder-to-text input:hover, .page-thunder-to-text input:focus {
+  border: 1px solid rgba(38, 50, 56, 0.6);
+}
+.page-thunder-to-text input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.1);
+}/*# sourceMappingURL=main_20250325233303.css.map */
