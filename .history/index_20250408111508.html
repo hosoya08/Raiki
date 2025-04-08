@@ -11,7 +11,7 @@
 
 <body >
     <!-- filter -->
-    <div class="filter" id="FILTER"></div>
+    <div></div>
     <!-- ==== -->
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.oMrg/1999/xlink" width="100%" height="100%" id="FIRST_SVG" style="z-index: 99; position: relative;">
         <defs>
@@ -94,7 +94,6 @@
     <script>
         const display01 = document.getElementById("FIRST_SVG");
         const display02 = document.getElementById("QUESION_DISPLAY");
-        const filter = document.getElementById("FILTER");
 
         //パラパラアニメーション
         confetti({
@@ -123,7 +122,6 @@
             document.body.classList.add("active");
             display01.classList.add("active");
             display02.classList.add("active");
-            filter.classList.add("active");
             document.querySelectorAll(".r-images").forEach((img)=> {
                 img.style.opacity = "0";
                 img.style.visibility = "hidden";

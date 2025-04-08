@@ -34,9 +34,6 @@ div.filter {
   z-index: 1;
   background-color: #00000087;
 }
-div.filter.active {
-  display: none;
-}
 
 @keyframes alphaRandom {
   0% {

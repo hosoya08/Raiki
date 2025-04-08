@@ -31,11 +31,8 @@ div.filter {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
-  background-color: #00000087;
-}
-div.filter.active {
-  display: none;
+  z-index: -1;
+  background-color: #00000017;
 }
 
 @keyframes alphaRandom {
@@ -182,7 +179,6 @@ img.r-images {
   transition: all .3s;
   opacity: 0;
   visibility: hidden;
-  z-index: 2;
 }
 img.r-images.n01 {
   width: 150px;

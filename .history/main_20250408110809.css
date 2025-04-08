@@ -3,8 +3,6 @@ html,
 body {
   /* background: #faafa0; */
   background-color: #ffbd68;
-  background-image: url(./image/flash.webp);
-  background-position: center center;
   margin: 0;
   height: 100%;
   overflow: hidden;
@@ -22,19 +20,6 @@ body.active {
 }
 
 svg.active {
-  display: none;
-}
-
-div.filter {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  background-color: #00000087;
-}
-div.filter.active {
   display: none;
 }
 
@@ -182,7 +167,9 @@ img.r-images {
   transition: all .3s;
   opacity: 0;
   visibility: hidden;
-  z-index: 2;
+}
+img.r-images.hidden {
+
 }
 img.r-images.n01 {
   width: 150px;

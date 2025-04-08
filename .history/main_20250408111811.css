@@ -32,10 +32,7 @@ div.filter {
   top: 0;
   left: 0;
   z-index: 1;
-  background-color: #00000087;
-}
-div.filter.active {
-  display: none;
+  background-color: #00000017;
 }
 
 @keyframes alphaRandom {
